@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pizza House</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- header -->
+  <div class="container sticky-top  rounded-4">
+    <header class="d-flex flex-wrap justify-content-center py-1 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+        <img class="bi mx-2" width="80" height="80" src="images/logo.png"></img>
+        <span class="fs-2 ps-2">Pizza House</span>
+      </a>    
+      <ul class="nav nav-pills fs-5">
+        <li class="nav-item"><a  id="nav-home" href="/" class="nav-link" aria-current="page">Home</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+        <li class="nav-item"><a  id="nav-menu" href="#" class="nav-link">Menu</a></li>
+        <li class="nav-item"><a href="#" class="nav-link  active">Detail</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+      </ul>
+    </header>
+  </div>
+  <!-- banner card -->
+  <div id="detail-card" class="container">
+      <h1 class="text-white text-center">Menu Content Details</h1>
+      <div style="display: flex; justify-content: center;">
+          <img id="detail-img" src="images/menu-detail.jpg" alt="" class="align-center w-50">
+      </div>
+  </div>
+  <!-- other card -->
+  <div class="container mt-3">
+    <div  class="row">
+      <div id="detail-content" class="col-12 border-top mb-2 pb-3" >
+        
+      </div>
+    </div>
+  </div>
+
+
+
+  <script type="module">
+    import foodFetch from "./api.js";
+    import htmlFood from './ui.js';
+    const cardData = new htmlFood();
+    const foodData = new foodFetch();
+    foodData.getJSONData()
+      .then(data => {
+        const detailId = new URLSearchParams(window.location.search);
+        const id = detailId.get('id');
+        const foundItem = data.menu.find(item => item.id == id);
+        const foundItem2 = data.menu.find(item => item.id !== id);
+        const vegetarianText = foundItem ? "Vegetarian" : "Non Vegetarian";
+        const spicyText = foundItem.spicy ? "Spicy" : "Non Spicy";
+        const ingredientsText = foundItem.ingredients ? foundItem.ingredients.join(", ") : "";
+        const title = ingredientsText ? `Ingredients` : "";
+        if (foundItem) {
+          
+          document.getElementById('detail-card').innerHTML = `
+            <div class="col ">
+              <div class="card shadow-sm">
+                <p class="text-center fs-4 py-2 text-warning">You are examining the details of the 
+                  <span class="text-info fs-3">"${foundItem.name}"</span>  content in our menu.
+                </p>                
+                <img src="${foundItem.image}" class="rounded-circle align-self-center" style="width: 300px; height: 220px;" />
+                <div class="card-body">
+                  <div class="text-center m-0 p-0">
+                    <p class=" text-capitalize text-center text-info d-flex align-items-center justify-content-center fs-5">
+                      ${title}
+                    </p>
+                    <p class=" text-capitalize text-center  text-success d-flex align-items-center justify-content-center fs-4">
+                    ${ingredientsText}
+                    </p>
+                  </div> 
+                  <div class="d-flex justify-content-between align-items-center px-3 border-top pt-2 border-info">
+                    <button class="btn btn-sm px-2 btn-warning px-3" id="button-back">Back</button>
+                    <small class="text-danger fs-5">${spicyText}</small>
+                    <small class="text-primary fs-5">${vegetarianText}</small>
+                    <small class="text-success fs-5">${foundItem.price.toFixed(2)} $</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          `;
+
+          const remainingItems = data.menu.filter(item => item.id !== id);
+          const remainingItemsHTML = remainingItems.map(item => `
+          <div class="col mt-3">
+            <div class="card text-bg-warning text-center mb-3" style="max-width: 180px;">
+              <div class="card-header fs-6" style="height:60px;" >${item.name}</div>
+              <div class="card-body">
+                <a href="detail.html?id=${item.id}" type="button" ><img src=${item.image} alt="" class="px-2 rounded-circle align-self-center" style="width: 100px; height: 100px;"></a>
+              </div>
+            </div>
+          </div>
+          `)
+          .join("");
+
+          document.getElementById('detail-content').innerHTML = `
+            <h5 class="text-white text-center fs-3 text-uppercase">other menu contents</h5>
+            <div class="row row-cols-6">${remainingItemsHTML}</div>
+            `;
+        }
+         else {
+          document.getElementById('detail-content').innerHTML = `
+            <h1 class="text-white">Ürün Detay Sayfası: Ürün bulunamadı</h1>
+          `;
+        }
+      })     
+      .catch(error => {
+        console.error('Error:', error);
+      });
+  </script>
+
+</body>
+
+</html>

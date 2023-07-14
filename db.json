@@ -1,0 +1,655 @@
+{
+   "menu": [
+        {
+            "id": 0,
+            "name": "Margherita",
+            "description": "",
+            "ingredients": ["tomato sauce", "mozzarella"],
+            "spicy": false,
+            "vegetarian": true,
+            "category": "pizza",
+            "price": 17.0,
+            "image": "images/images0.jpg"
+        },
+        {
+            "id": 1,
+            "name": "Pepperoni",
+            "description": "",
+            "ingredients": ["tomato sauce", "mozzarella", "double pepperoni"],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "pizza",
+            "price": 20.0,
+            "image": "images/images1.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Rome",
+            "description": "",
+            "ingredients": [
+                "tomato sauce",
+                "mozzarella",
+                "ham",
+                "mushrooms",
+                "beef cubes"
+            ],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "pizza",
+            "price": 25.75,
+            "image": "images/images2.png"
+        },
+        {
+            "id": 3,
+            "name": "American Spicy",
+            "description": "",
+            "ingredients": [
+                "tomato sauce",
+                "mozzarella",
+                "pepperoni",
+                "tomatoes",
+                "green pepper",
+                "red onion",
+                "jalapenos",
+                "Samourai sauce"
+            ],
+            "spicy": true,
+            "vegetarian": false,
+            "category": "pizza",
+            "price": 30.25,
+            "image": "images/images3.png"
+        },
+        {
+            "id": 4,
+            "name": "Quattro Stagioni",
+            "description": "",
+            "ingredients": [
+                "tomato sauce",
+                "mozzarella",
+                "ham",
+                "pepperoni",
+                "mushrooms",
+                "green pepper"
+            ],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "pizza",
+            "price": 27.25,
+            "image": "images/images4.jpg"
+        },
+        {
+            "id": 5,
+            "name": "Pork & Feta",
+            "description": "",
+            "ingredients": [
+                "tomato sauce",
+                "mozzarella",
+                "feta cheese",
+                "ham",
+                "pork cubes",
+                "red onion"
+            ],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "pizza",
+            "price": 27.25,
+            "image": "images/images5.png"
+        },
+        {
+            "id": 6,
+            "name": "Quattro Formaggi",
+            "description": "",
+            "ingredients": [
+                "mozzarella",
+                "cheddar cheese",
+                "emmentaler",
+                "blue cheese",
+                "oregano"
+            ],
+            "spicy": false,
+            "vegetarian": true,
+            "category": "pizza",
+            "price": 35.15,
+            "image": "images/images6.jpg"
+        },
+        {
+            "id": 7,
+            "name": "Carnivora",
+            "description": "",
+            "ingredients": [
+                "tomato sauce",
+                "mozzarella",
+                "chicken breast",
+                "beef cubes",
+                "pepperoni",
+                "bacon"
+            ],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "pizza",
+            "price": 27.25,
+            "image": "images/images7.png"
+        },
+        {
+            "id": 8,
+            "name": "Louisiana Chicken",
+            "description": "",
+            "ingredients": [
+                "marinated chicken",
+                "TABASCO spicy sauce",
+                "red pepper sauce",
+                "blue cheese",
+                "green pepper",
+                "red onion"
+            ],
+            "spicy": true,
+            "vegetarian": false,
+            "category": "pizza",
+            "price": 20.0,
+            "image": "images/images8.png"
+        },
+        {
+            "id": 9,
+            "name": "Honey Mustard Chicken",
+            "description": "",
+            "ingredients": [
+                "tomato sauce",
+                "mozzarella",
+                "marinated chicken in Honey Mustard sauce",
+                "cheddar cheese",
+                "red onion"
+            ],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "pizza",
+            "price": 19.8,
+            "image": "images/images9.png"
+        },
+        {
+            "id": 10,
+            "name": "Hawaiian",
+            "description": "",
+            "ingredients": [
+                "mozzarella",
+                "sweet chilli sauce",
+                "pepperoni",
+                "pineapple",
+                "jalapenos",
+                "red onion"
+            ],
+            "spicy": true,
+            "vegetarian": false,
+            "category": "pizza",
+            "price": 27.25,
+            "image": "images/images10.png"
+        },
+        {
+            "id": 11,
+            "name": "Classic",
+            "description": "",
+            "ingredients": [
+                "tomato sauce",
+                "mozzarella",
+                "ham",
+                "mushrooms",
+                "olives"
+            ],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "pizza",
+            "price": 27.25,
+            "image": "images/images11.png"
+        },
+        {
+            "id": 12,
+            "name": "Pastrami",
+            "description": "",
+            "ingredients": [
+                "tomato sauce",
+                "mozzarella",
+                "pastrami",
+                "salty cheese",
+                "baked green pepper",
+                "red onion"
+            ],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "pizza",
+            "price": 27.25,
+            "image": "images/images12.png"
+        },
+        {
+            "id": 13,
+            "name": "Hot Pastrami",
+            "description": "",
+            "ingredients": [
+                "Honey Mustard sauce",
+                "mozzarella",
+                "pastrami",
+                "sausages",
+                "chilli pepper",
+                "red onion"
+            ],
+            "spicy": true,
+            "vegetarian": false,
+            "category": "pizza",
+            "price": 27.25,
+            "image": "images/images13.png"
+        },
+        {
+            "id": 14,
+            "name": "Country",
+            "description": "",
+            "ingredients": [
+                "tomato sauce",
+                "mozzarella",
+                "bacon",
+                "corn",
+                "onion",
+                "mushrooms"
+            ],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "pizza",
+            "price": 27.25,
+            "image": "images/images14.png"
+        },
+        {
+            "id": 15,
+            "name": "Hot Cheese",
+            "description": "",
+            "ingredients": [
+                "tomato sauce",
+                "mozzarella",
+                "cheddar cheese",
+                "salty cheese",
+                "tomatoes",
+                "chilli pepper",
+                "oregano"
+            ],
+            "spicy": true,
+            "vegetarian": true,
+            "category": "pizza",
+            "price": 27.25,
+            "image": "images/images15.png"
+        },
+        {
+            "id": 16,
+            "name": "Ocean",
+            "description": "",
+            "ingredients": [
+                "tomato sauce",
+                "mozzarella",
+                "tuna",
+                "corn",
+                "onion",
+                "olives"
+            ],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "pizza",
+            "price": 30,
+            "image": "images/images16.png"
+        },
+        {
+            "id": 17,
+            "name": "BBQ",
+            "description": "",
+            "ingredients": [
+                "tomato sauce",
+                "mozzarella",
+                "BBQ sauce",
+                "onion",
+                "corn",
+                "bacon",
+                "mushrooms",
+                "sausages"
+            ],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "pizza",
+            "price": 28.5,
+            "image": "images/images17.png"
+        },
+        {
+            "id": 18,
+            "name": "Mexicana",
+            "description": "",
+            "ingredients": [
+                "tomato sauce",
+                "mozzarella",
+                "salsa sauce",
+                "pepperoni",
+                "corn",
+                "onion",
+                "jalapenos",
+                "tortilla chips"
+            ],
+            "spicy": true,
+            "vegetarian": false,
+            "category": "pizza",
+            "price": 28.5,
+            "image": "images/images18.png"
+        },
+        {
+            "id": 19,
+            "name": "Bolognese",
+            "description": "",
+            "ingredients": ["penne", "ragu sauce", "beef cubes", "mozzarella"],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "pasta",
+            "price": 28.0,
+            "image": "images/images19.png"
+        },
+        {
+            "id": 20,
+            "name": "Carbonara",
+            "description": "",
+            "ingredients": [
+                "penne",
+                "white cream and garlic sauce",
+                "bacon",
+                "parmesan"
+            ],
+            "spicy": false,
+            "vegetarian": true,
+            "category": "pasta",
+            "price": 28.0,
+            "image": "images/images20.png"
+        },
+        {
+            "id": 21,
+            "name": "Caesar",
+            "description": "",
+            "ingredients": [
+                "chicken breast",
+                "bacon",
+                "parmesan",
+                "cherry tomatoes",
+                "croutons",
+                "lettuce",
+                "beetroot",
+                "sauce of your choice"
+            ],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "salads",
+            "price": 20,
+            "image": "images/images21.png"
+        },
+        {
+            "id": 22,
+            "name": "Greek",
+            "description": "",
+            "ingredients": [
+                "feta cheese",
+                "green olives",
+                "cherry tomatoes",
+                "cucumbers",
+                "red onion",
+                "red pepper",
+                "oregano",
+                "lettuce",
+                "beetroot",
+                "sauce of your choice"
+            ],
+            "spicy": false,
+            "vegetarian": true,
+            "category": "salads",
+            "price": 20,
+            "image": "images/images22.png"
+        },
+        {
+            "id": 23,
+            "name": "Tuna",
+            "description": "",
+            "ingredients": [
+                "tuna",
+                "green olives",
+                "corn",
+                "red pepper",
+                "red onion",
+                "lettuce",
+                "beetroot",
+                "sauce of your choice"
+            ],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "salads",
+            "price": 20,
+            "image": "images/images23.png"
+        },
+        {
+            "id": 24,
+            "name": "Brownie",
+            "description": "A delicious cake with chocolate and hazelnuts",
+            "ingredients": [],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "dessert",
+            "price": 15,
+            "image": "images/images24.png"
+        },
+        {
+            "id": 25,
+            "name": "Chocolate Tortilla",
+            "description": "Tortilla filled with chocolate cream",
+            "ingredients": [],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "dessert",
+            "price": 12,
+            "image": "images/images25.png"
+        },
+        {
+            "id": 26,
+            "name": "Apple Pie",
+            "description": "Hot pie with apple and cinnamon",
+            "ingredients": [],
+            "spicy": false,
+            "vegetarian": true,
+            "category": "dessert",
+            "price": 15,
+            "image": "images/images26.png"
+        },
+        {
+            "id": 27,
+            "name": "Cheesecake",
+            "description": "Cheesecake with berries topping",
+            "ingredients": [],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "dessert",
+            "price": 15,
+            "image": "images/images27.png"
+        },
+        {
+            "id": 28,
+            "name": "Coca Cola",
+            "description": "Coca Cola 330ml",
+            "ingredients": [],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "drinks",
+            "price": 5,
+            "image": "images/images28.png"
+        },
+        {
+            "id": 29,
+            "name": "Fanta",
+            "description": "Fanta 330ml",
+            "ingredients": [],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "drinks",
+            "price": 5,
+            "image": "images/images29.png"
+        },
+        {
+            "id": 30,
+            "name": "Sprite",
+            "description": "Sprite 330ml",
+            "ingredients": [],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "drinks",
+            "price": 5,
+            "image": "images/images30.jpg"
+        },
+        {
+            "id": 31,
+            "name": "Water",
+            "description": "Dorna 0.5L",
+            "ingredients": [],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "drinks",
+            "price": 4.5,
+            "image": "images/images31.jpg"
+        },
+        {
+            "id": 32,
+            "name": "Sparkling water",
+            "description": "Dorna 0.5L",
+            "ingredients": [],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "drinks",
+            "price": 4.5,
+            "image": "images/images32.jpg"
+        },
+        {
+            "id": 33,
+            "name": "Fuzetea",
+            "description": "Fuzetea 0.5L Peach or Lemon",
+            "ingredients": [],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "drinks",
+            "price": 5,
+            "image": "images/images33.jpg"
+        },
+        {
+            "id": 34,
+            "name": "BBQ",
+            "description": "",
+            "ingredients": [],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "sauces",
+            "price": 4,
+            "image": "images/images34.png"
+        },
+        {
+            "id": 35,
+            "name": "Pizza",
+            "description": "",
+            "ingredients": [],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "sauces",
+            "price": 4,
+            "image": "images/images35.png"
+        },
+        {
+            "id": 36,
+            "name": "Salsa",
+            "description": "",
+            "ingredients": [],
+            "spicy": true,
+            "vegetarian": false,
+            "category": "sauces",
+            "price": 4,
+            "image": "images/images36.png"
+        },
+        {
+            "id": 37,
+            "name": "Sweet Chilli",
+            "description": "",
+            "ingredients": [],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "sauces",
+            "price": 4,
+            "image": "images/images37.png"
+        },
+        {
+            "id": 38,
+            "name": "Spicy TABASCO",
+            "description": "",
+            "ingredients": [],
+            "spicy": true,
+            "vegetarian": false,
+            "category": "sauces",
+            "price": 4,
+            "image": "images/images38.png"
+        },
+        {
+            "id": 39,
+            "name": "Mayonnaise",
+            "description": "",
+            "ingredients": [],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "sauces",
+            "price": 4,
+            "image": "images/images39.png"
+        },
+        {
+            "id": 40,
+            "name": "Ketchup",
+            "description": "",
+            "ingredients": [],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "sauces",
+            "price": 4,
+            "image": "images/images40.png"
+        },
+        {
+            "id": 41,
+            "name": "Garlic sauce",
+            "description": "",
+            "ingredients": [],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "sauces",
+            "price": 4,
+            "image": "images/images41.png"
+        },
+        {
+            "id": 42,
+            "name": "Wedges",
+            "description": "Baked potatoes, slightly spicy",
+            "ingredients": [],
+            "spicy": false,
+            "vegetarian": true,
+            "category": "sides",
+            "price": 6,
+            "image": "images/images42.png"
+        },
+        {
+            "id": 43,
+            "name": "Onion rings",
+            "description": "Fried onion rings",
+            "ingredients": [],
+            "spicy": false,
+            "vegetarian": true,
+            "category": "sides",
+            "price": 6,
+            "image": "images/images43.png"
+        },
+        {
+            "id": 44,
+            "name": "Coleslaw",
+            "description": "Cabbage salad, carrots and dressing",
+            "ingredients": [],
+            "spicy": false,
+            "vegetarian": false,
+            "category": "sides",
+            "price": 10,
+            "image": "images/images44.png"
+        }
+    ]
+}

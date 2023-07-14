@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;600&family=Poppins:ital,wght@0,400;0,600;1,500&family=Roboto:wght@400;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+:root{
+  --font-content: 'Poppins', sans-serif;;
+  --font2: 'Oswald', sans-serif;;
+  --font3: 'Roboto', sans-serif;;
+  --font4: 'Space Grotesk', sans-serif;
+}
+* {
+  font-family: var(--font2);
+}
+body{
+  background: linear-gradient(109.6deg, rgb(36, 45, 57) 11.2%, rgb(16, 37, 60) 51.2%, rgb(0, 0, 0) 98.6%);
+}
+header{
+  background: linear-gradient(to top, #09203f 0%, #537895 100%);
+  position: sticky;
+  color: aliceblue;
+  border-radius: 15px;
+}
+.nav {
+  position: sticky;
+  top: 0;
+  padding: 10px;
+}
+.head img{
+  width: 80px;
+  height: 80px;
+}
+header span{
+  font-family: var(--font-content);
+  align-items: center;
+  padding-left: 20px;
+  color: aliceblue;
+
+}
+header .nav-item{
+  font-family: var(--font3) !important;
+}
+#button-head{
+  display: none;
+}
+@media (max-width: 760px) {
+  #card {
+    max-width: 400px;
+  }
+
+  #card img {
+    width: 100%;
+    height: 200px;
+  }
+}
